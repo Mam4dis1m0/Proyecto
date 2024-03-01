@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95fbe539-f0f3-45b7-8a53-294c4b4f221b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BLL/ClienteService.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BLL/connection_manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAL/Clientes_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/Cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/producto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BLL/producto.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DAL/Prouctos_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/API.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Application/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/ClienteService.py" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/ClienteService.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DAL/Clientes_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/Clientes_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Cliente.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/producto.py" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/producto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +102,8 @@
       <workItem from="1709087562494" duration="2820000" />
       <workItem from="1709126965141" duration="1995000" />
       <workItem from="1709161132647" duration="429000" />
+      <workItem from="1709295291973" duration="4252000" />
+      <workItem from="1709319100645" duration="13501000" />
     </task>
     <servers />
   </component>
@@ -110,7 +113,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$connection_manager.coverage" NAME="connection_manager Coverage Results" MODIFIED="1709069784688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BLL" />
     <SUITE FILE_PATH="coverage/pythonProject$estudiante.coverage" NAME="estudiante Coverage Results" MODIFIED="1704823567100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Clases" />
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1709129147253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Application" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1709332650560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Application" />
     <SUITE FILE_PATH="coverage/pythonProject$Cliente.coverage" NAME="Cliente Coverage Results" MODIFIED="1708990821734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Entity" />
     <SUITE FILE_PATH="coverage/pythonProject$api.coverage" NAME="api Coverage Results" MODIFIED="1708993974031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/aplicaciones" />
   </component>

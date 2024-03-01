@@ -1,46 +1,51 @@
-from mysql.connector.abstracts import MySQLCursorAbstract
-from mysql.connector.pooling import PooledMySQLConnection
-
 from Entity.Cliente import cliente, ClientesResponse
-from Entity.producto import Producto
+from Entity.producto import Producto,ProductoResponse
 
 
 class ClientesRepository():
     def __init__(self, connection):
         self.connection = connection
 
-    def obtener_cliente(self):
-        return self.__cliente
+    def TD_cliente(self):
+        return self.__Clientes
 
     def obtener_todos(self):
-        cliente = []
+        Datos = []
         cursor = self.connection.cursor()
         cursor.execute(
-            "SELECT nombre,sexo ,Identificacion ,Fecha_Nacimiento)"
-            "FROM `clientes`.e "
-            "LEFT JOIN `productos`.n "
-            "ON e.id_cliente = n.id "
+
+            'SELECT  nombre , sexo ,  Identificacion ,   Fecha_Nacimiento )' 
+            
+            'FROM clientes e'
+            
+            'LEFT JOIN productos n '
+            
+            'ON e.id = n.id_cliente '
+
         )
+
         result = cursor.fetchall()
         for item in result:
-            cliente.append(self.mapear_Clientes(item))
+            Datos.append(self.mapear(item))
 
         cursor.close()
-        return cliente
+        return Datos
 
-    def guardar_cliente(self,cliente:cliente):
-
-        id = None
+    def guardar_cliente(self, Cliente: cliente):
         cursor = self.connection.cursor()
-
-        sql = ("INSERT INTO cliente(nombre , sexo , Identificacion,Fecha_Nacimiento) "
-               "VALUES(%s, %s, %s, %s)")
+        sql = ("INSERT INTO Cliente(nombre , sexo , Identificacion,Fecha_Nacimiento) "
+               "values(%s,%s,%s,%s)")
 
         values = (
            cliente.identificacion,
            cliente.nombre,
            cliente.sexo,
             str(cliente.fechaNacimiento))
+
+
+        cursor.execute(sql, values)
+        self.connetion.commit()
+        cursor.close()
 
 
 
@@ -60,10 +65,18 @@ class ClientesRepository():
 
 
 
-    def mapear_Clientes(self, registro):
-        return ClientesResponse(
-            identificacion=registro[0],
-            nombre=registro[1],
-            sexo=registro[2],
-            fechaNacimiento=registro[3]
+
+
+def mapear( self, registro):
+    nombre, apellido, identificacion, sexo, fecha_nacimiento, valor_producto, nombre_producto = registro
+    return ClientesResponse(
+        nombre=nombre,
+        apellido=apellido,
+        identificacion=identificacion,
+        sexo=sexo,
+        fecha_nacimiento=fecha_nacimiento,
+        ProductoResponse=ProductoResponse(
+            nombre_producto=str(nombre_producto),
+            valor=int(valor_producto)
         )
+    )

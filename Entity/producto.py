@@ -2,9 +2,10 @@ from pydantic import BaseModel
 
 
 class Producto(BaseModel):
-    id_Cliente: int
+    NombProd: str
     producto: str
 
 
 class ProductoResponse(BaseModel):
    producto:str
+   nombre : str
